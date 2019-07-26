@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../lib/Vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <com1></com1>
+    </div>
+
+    <template id="tmpl">
+        <div>
+            <p>这是组件com1</p>
+        </div>
+    </template>
+    <script>
+
+        let com1 = {
+            template: "#tmpl"
+        }
+
+        new Vue({
+            el: '#app',
+            data: {},
+            methods: {},
+            components: {
+                com1
+            }
+        })
+    </script>
+</body>
+
+</html>
